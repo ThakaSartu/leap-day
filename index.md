@@ -3,6 +3,8 @@ layout: default
 mermaid: true
 ---
 
+
+# GitHub Branching 
 <div class="mermaid">
 gitGraph:
     commit "Ashish"
@@ -19,20 +21,10 @@ gitGraph:
     commit
 </div> 
 
-<div class="mermaid">
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-</div> 
 
     
-#Mermaid Sequence Diagram: Blogging app service communication
+# Mermaid Sequence Diagram: Blogging app service communication
 <div class="mermaid">
 sequenceDiagram
     participant web as Web Browser
@@ -65,6 +57,18 @@ sequenceDiagram
 
 </div>
 
+# Water CoolEr 
+<div class="mermaid">
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+</div> 
 
 # [Server Procurement Takes Too Long: Causes and Effects](https://github.com/rudolfolah/mermaid-diagram-examples/blob/main/diagrams/cause-and-effect.md)
 <div class="mermaid">
