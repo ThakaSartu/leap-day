@@ -3,8 +3,7 @@ layout: default
 mermaid: true
 ---
 
-
-
+<div class="mermaid">
 gitGraph:
     commit "Ashish"
     branch newbranch
@@ -18,9 +17,23 @@ gitGraph:
     commit
     branch b2
     commit
+</div> 
+
+<div class="mermaid">
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+</div> 
+
     
 #Mermaid Sequence Diagram: Blogging app service communication
-
+<div class="mermaid">
 sequenceDiagram
     participant web as Web Browser
     participant blog as Blog Service
@@ -50,9 +63,11 @@ sequenceDiagram
         end
     end
 
+</div>
 
 
 # [Server Procurement Takes Too Long: Causes and Effects](https://github.com/rudolfolah/mermaid-diagram-examples/blob/main/diagrams/cause-and-effect.md)
+<div class="mermaid">
 mindmap
 root{{Server Procurement Takes Too Long}}
   (Material)
@@ -79,8 +94,10 @@ root{{Server Procurement Takes Too Long}}
     outdated procurement software
     lack of integration between procurement and project management tools
     manual tracking of procurement status
-
+</div>div>
 # Class Diagram 
+
+<div class="mermaid">
 ---
 title: Django Watson Class Diagram
 ---
@@ -154,7 +171,7 @@ SearchEngineError <|-- RegistrationError
 SearchContextManager *-- SearchContext
 SearchContext <|-- SkipSearchContext
 
-
+</div>
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
